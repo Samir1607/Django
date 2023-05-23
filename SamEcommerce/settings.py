@@ -22,6 +22,10 @@ SECRET_KEY = "django-insecure-w!2h(nitrj7p8186nvd72(2+n89g=88i*z_7$k4k190#whq*=y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
+BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 ALLOWED_HOSTS = ['*']
 
 
@@ -133,5 +137,3 @@ EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False
 
-BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
