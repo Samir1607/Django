@@ -20,7 +20,7 @@ from pathlib import Path
 SECRET_KEY = "django-insecure-w!2h(nitrj7p8186nvd72(2+n89g=88i*z_7$k4k190#whq*=y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -57,7 +57,7 @@ ROOT_URLCONF = "SamEcommerce.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [os.path.join(BASE_DIR, "static/")],
+        "DIRS": ["templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
